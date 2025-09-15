@@ -34,6 +34,12 @@ body {
   background-position: right top;
 }
 
+@media (max-width: 850px) {
+  body {
+    background: none;
+  }
+}
+
 a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
@@ -116,4 +122,22 @@ a {
   height: 100%;
   object-fit: cover; /* Bild füllt Container komplett */
   display: block;
+}
+
+@media (max-width: 770px) {
+  .project-content {
+    flex: none;
+  }
+
+  .project-image {
+    flex: none;
+  }
+
+  .project-img {
+    display: none;
+  }
+
+  .project-box {
+    display: block;
+  }
 }
